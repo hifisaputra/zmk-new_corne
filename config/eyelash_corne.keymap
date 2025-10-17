@@ -90,6 +90,33 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp C &kp H &kp O &kp SPACE &kp SQT &kp SQT &kp SEMI &kp LEFT>;
         };
+
+        macro_double_eq: macro_double_eq {
+            compatible = "zmk,behavior-macro";
+            label = "==";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+        };
+
+        macro_triple_eq: macro_triple_eq {
+            compatible = "zmk,behavior-macro";
+            label = "===";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL &kp EQUAL>;
+        };
+
+        macro_not_eq_strict: macro_not_eq_strict {
+            compatible = "zmk,behavior-macro";
+            label = "!==";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL &kp EQUAL>;
+        };
+
+        td_eq: td_eq {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&macro_double_eq>, <&macro_triple_eq>, <&macro_not_eq_strict>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
