@@ -52,14 +52,14 @@
             compatible = "zmk,behavior-macro";
             label = "=>";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp EQUAL &kp RIGHT_ARROW &kp SPACE>;
+            bindings = <&kp SPACE &kp EQUAL &kp RIGHT &kp SPACE>;
         };
 
         macro_php_ptr: macro_php_ptr {
             compatible = "zmk,behavior-macro";
             label = "->";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp RARROW>;
+            bindings = <&kp MINUS &kp RIGHT>;
         };
 
         macro_php_scope: macro_php_scope {
