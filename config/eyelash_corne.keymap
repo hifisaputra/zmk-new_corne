@@ -73,14 +73,14 @@
             compatible = "zmk,behavior-macro";
             label = "console.log()";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR &kp SEMI>;
+            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR &kp SEMI &kp LEFT &kp LEFT_ARROW>;
         };
 
-        macro_php_tags: macro_php_tags {
+        macro_php_tags_open: macro_php_tags {
             compatible = "zmk,behavior-macro";
             label = "<?php ?>";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp QMARK &kp P &kp H &kp P &kp ENTER &kp ENTER &kp QMARK &kp GT>;
+            bindings = <&kp LT &kp QMARK &kp P &kp H &kp P &kp SPACE>;
         };
 
         macro_echo: macro_echo {
@@ -118,6 +118,27 @@
             bindings = <&kp EXCL &kp EQUAL>;
         };
 
+        macro_php_tags_close: new_macro {
+            compatible = "zmk,behavior-macro";
+            label = "NEW_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp QUESTION &kp GREATER_THAN>;
+        };
+
+        macro_return: macro_return {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_RETURN";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
+        };
+
+        macro_php_get_field: macro_php_get_field {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp E &kp T &kp UNDER &kp F &kp I &kp E &kp L &kp D &kp LPAR &kp SQT &kp SQT &kp RPAR &kp LEFT &kp LEFT>;
+            label = "MACRO_PHP_GET_FIELD";
+        };
+
         td_eq: td_eq {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -145,10 +166,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&none  &kp Q           &kp W           &kp E               &kp R             &kp T                             &kp UP                &kp Y            &kp U              &kp I                &kp O            &kp P               &none
-&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &none
-&none  &kp Z           &kp X           &kp C               &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA            &kp DOT          &kp FSLH            &none
-                                       &kp ESC             &lt 0 SPACE       &lt 1 TAB                                               &lt 2 BACKSPACE  &lt 3 ENTER        &lt 4 DELETE
+&kp ESCAPE  &kp Q           &kp W           &kp E               &kp R             &kp T                             &kp UP                &kp Y            &kp U              &kp I                &kp O            &kp P               &none
+&none       &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &none
+&none       &kp Z           &kp X           &kp C               &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA            &kp DOT          &kp FSLH            &none
+                                            &kp LS(TAB)         &lt 0 SPACE       &lt 1 TAB                                               &lt 2 BACKSPACE  &lt 3 ENTER        &lt 4 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -181,10 +202,10 @@
         coding_macros {
             display-name = "CODE";
             bindings = <
-&none  &macro_arrow_fn  &macro_php_ptr    &macro_php_scope  &macro_dollar_brace  &macro_backtickpair                    &trans          &macro_brack  &macro_paren  &macro_brace  &none  &macro_php_tags  &none
-&none  &macro_log       &macro_double_eq  &td_eq            &kp MINUS            &kp UNDERSCORE                 &trans  &trans  &trans  &none         &none         &none         &none  &macro_echo      &none
-&none  &none            &none             &none             &none                &none                &trans            &trans          &none         &none         &none         &none  &none            &none
-                                          &trans            &trans               &trans                                                 &trans        &none         &trans
+&none  &macro_arrow_fn  &macro_php_ptr    &macro_php_scope  &macro_dollar_brace  &macro_backtickpair                    &trans          &macro_brack          &macro_paren  &macro_brace  &macro_php_tags_open  &macro_php_tags_close  &none
+&none  &macro_log       &macro_double_eq  &td_eq            &none                &macro_return                  &trans  &trans  &trans  &macro_php_get_field  &none         &none         &none                 &macro_echo            &none
+&none  &none            &none             &none             &none                &none                &trans            &trans          &none                 &none         &none         &none                 &none                  &none
+                                          &trans            &trans               &trans                                                 &trans                &none         &trans
             >;
         };
 
