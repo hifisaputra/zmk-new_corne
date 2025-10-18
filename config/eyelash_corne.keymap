@@ -115,7 +115,7 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_NOT_EQ";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp EQUAL>;
+            bindings = <&kp EXCL &kp EQUAL>;
         };
 
         td_eq: td_eq {
@@ -124,6 +124,7 @@
             bindings =
                 <&kp EQUAL>,
                 <&macro_double_eq>,
+                <&macro_not_eq>,
                 <&macro_triple_eq>,
                 <&macro_not_eq_strict>;
         };
