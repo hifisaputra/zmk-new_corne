@@ -111,6 +111,13 @@
             bindings = <&kp EXCL &kp EQUAL &kp EQUAL>;
         };
 
+        macro_not_eq: macro_not_eq {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_NOT_EQ";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+        };
+
         td_eq: td_eq {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -137,9 +144,9 @@
         base_layer {
             display-name = "QWERTY";
             bindings = <
-&none  &kp Q           &kp W           &kp E               &kp R             &kp T                             &kp UP                &kp Y            &kp U              &kp I                &kp O    &kp P     &none
-&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &kp L    &kp SEMI  &none
-&none  &kp Z           &kp X           &kp C               &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA            &kp DOT  &kp FSLH  &none
+&none  &kp Q           &kp W           &kp E               &kp R             &kp T                             &kp UP                &kp Y            &kp U              &kp I                &kp O            &kp P               &none
+&none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &none
+&none  &kp Z           &kp X           &kp C               &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA            &kp DOT          &kp FSLH            &none
                                        &kp ESC             &lt 0 SPACE       &lt 1 TAB                                               &lt 2 BACKSPACE  &lt 3 ENTER        &lt 4 DELETE
             >;
 
@@ -173,7 +180,7 @@
         coding_macros {
             bindings = <
 &none  &macro_arrow_fn  &macro_php_ptr    &macro_php_scope  &macro_dollar_brace  &macro_backtickpair                    &trans          &macro_brack  &macro_paren  &macro_brace  &none  &macro_php_tags  &none
-&none  &macro_log       &macro_double_eq  &none             &kp MINUS            &kp UNDERSCORE                 &trans  &trans  &trans  &none         &none         &none         &none  &macro_echo      &none
+&none  &macro_log       &macro_double_eq  &td_eq            &kp MINUS            &kp UNDERSCORE                 &trans  &trans  &trans  &none         &none         &none         &none  &macro_echo      &none
 &none  &none            &none             &none             &none                &none                &trans            &trans          &none         &none         &none         &none  &none            &none
                                           &trans            &trans               &trans                                                 &trans        &none         &trans
             >;
@@ -182,8 +189,8 @@
         fn_layer {
             bindings = <
 &none  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5                        &trans          &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR
-&none  &kp F6   &kp F7   &kp F8  &kp F9       &kp F10               &trans  &trans  &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF
-&none  &kp F11  &kp F12  &none   &bootloader  &sys_reset  &trans            &trans          &none            &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
+&none  &kp F6   &kp F7   &kp F8  &kp F9       &kp F10               &trans  &trans  &trans  &rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF
+&none  &kp F11  &kp F12  &none   &bootloader  &sys_reset  &trans            &trans          &rgb_ug RGB_OFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
                          &trans  &trans       &trans                                        &trans           &trans           &none
             >;
         };
