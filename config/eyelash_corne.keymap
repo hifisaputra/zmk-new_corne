@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-macro";
             label = "=>";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp EQUAL &kp RARROW &kp SPACE>;
+            bindings = <&kp SPACE &kp EQUAL &kp RIGHT_ARROW &kp SPACE>;
         };
 
         macro_php_ptr: macro_php_ptr {
