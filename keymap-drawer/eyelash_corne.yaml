@@ -26,8 +26,8 @@ layers:
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - L
-  - {t: ;, s: ':'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
@@ -164,7 +164,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&macro_log'
   - '&macro_double_eq'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&td_eq'
   - {t: '-', s: _}
   - _
   - {t: '$$mdi:transfer$$', type: trans}
@@ -219,7 +219,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB TOG
+  - RGB ON
   - RGB HUI
   - RGB HUD
   - RGB SAI
@@ -233,7 +233,7 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB OFF
   - RGB SPI
   - RGB SPD
   - RGB BRI
