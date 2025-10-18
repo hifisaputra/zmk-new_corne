@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  BASE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
   - W
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-space$$', h: QWERTY}
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: coding_macros}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: fn}
-  SYMBOL:
+  - {t: '$$mdi:keyboard-space$$', h: BASE}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:keyboard-return$$', h: CODE}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
+  SYM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - '@'
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  NUMBER:
+  NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  coding_macros:
+  CODE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&macro_arrow_fn'
   - '&macro_php_ptr'
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  fn:
+  FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
   - F2
