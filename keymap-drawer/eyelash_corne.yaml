@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   BASE:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab-reverse$$
   - {t: '$$mdi:keyboard-space$$', h: BASE}
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
   - {t: '$$mdi:backspace$$', h: NUM}
@@ -158,19 +158,19 @@ layers:
   - '&macro_brack'
   - '&macro_paren'
   - '&macro_brace'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&macro_php_tags'
+  - '&macro_php_tags_open'
+  - '&macro_php_tags_close'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&macro_log'
   - '&macro_double_eq'
   - '&td_eq'
-  - {t: '-', s: _}
-  - _
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&macro_return'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&macro_php_get_field'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
