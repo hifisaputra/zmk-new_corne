@@ -143,7 +143,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            display-name = "QWERTY";
+            display-name = "BASE";
             bindings = <
 &none  &kp Q           &kp W           &kp E               &kp R             &kp T                             &kp UP                &kp Y            &kp U              &kp I                &kp O            &kp P               &none
 &none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &none
@@ -155,7 +155,7 @@
         };
 
         sym_layer {
-            display-name = "SYMBOL";
+            display-name = "SYM";
             bindings = <
 &trans           &kp GRAVE  &kp AT                &kp HASH               &kp DLLR          &kp PRCNT                                &trans             &kp AMPERSAND  &kp ASTERISK      &kp UNDERSCORE  &kp PLUS            &kp PIPE       &none
 &kp EXCLAMATION  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                &trans  &mkp LCLK  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp APOSTROPHE  &kp LS(APOSTROPHE)  &kp COLON      &none
@@ -167,7 +167,7 @@
         };
 
         num_layer {
-            display-name = "NUMBER";
+            display-name = "NUM";
             bindings = <
 &trans  &kp N1        &kp N2     &kp N3    &kp N4     &kp N5                            &trans             &kp HOME        &kp PAGE_UP      &kp PAGE_DOWN         &kp END                &kp PRINTSCREEN  &none
 &trans  &kp NUMBER_6  &kp N7     &kp N8    &kp N9     &kp N0                    &trans  &mkp LCLK  &trans  &kp LEFT        &kp DOWN         &kp UP                &kp RIGHT              &kp INS          &none
@@ -179,6 +179,7 @@
         };
 
         coding_macros {
+            display-name = "CODE";
             bindings = <
 &none  &macro_arrow_fn  &macro_php_ptr    &macro_php_scope  &macro_dollar_brace  &macro_backtickpair                    &trans          &macro_brack  &macro_paren  &macro_brace  &none  &macro_php_tags  &none
 &none  &macro_log       &macro_double_eq  &td_eq            &kp MINUS            &kp UNDERSCORE                 &trans  &trans  &trans  &none         &none         &none         &none  &macro_echo      &none
@@ -188,6 +189,7 @@
         };
 
         fn_layer {
+            display-name = "FN";
             bindings = <
 &none  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5                        &trans          &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR
 &none  &kp F6   &kp F7   &kp F8  &kp F9       &kp F10               &trans  &trans  &trans  &rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF
