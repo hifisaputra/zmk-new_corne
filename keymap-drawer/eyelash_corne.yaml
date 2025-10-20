@@ -43,10 +43,10 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-tab-reverse$$
+  - {t: 'Sft+$$mdi:keyboard-tab$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: CODE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
   SYM:
@@ -141,10 +141,10 @@ layers:
   - )
   - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   CODE:
