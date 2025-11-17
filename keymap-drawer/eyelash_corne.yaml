@@ -247,11 +247,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   NAV:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+1
+  - Ctl+2
+  - Ctl+3
+  - Ctl+4
+  - {t: Ctl+5, s: Ctl+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
