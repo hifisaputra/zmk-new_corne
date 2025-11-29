@@ -166,10 +166,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp ESCAPE    &kp Q  &kp W  &kp E               &kp R             &kp T                                   &mmv MOVE_Y(300)                   &kp Y          &kp U              &kp I                &kp O    &kp P     &kp RIGHT_GUI
-&kp LEFT_ALT  &kp A  &kp S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp MB1          &mmv MOVE_RIGHT  &kp H          &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &kp L    &kp SEMI  &none
-&none         &kp Z  &kp X  &kp C               &kp V             &kp B      &kp SPACE                    &mmv MOVE_DOWN                     &kp N          &kp M              &kp COMMA            &kp DOT  &kp FSLH  &none
-                            &lt 2 RS(TAB)       &lt 1 SPACE       &lt 5 TAB                                                                  &kp BACKSPACE  &lt 3 ENTER        &lt 4 DELETE
+&kp ESCAPE    &kp Q  &kp W  &kp E               &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y          &kp U              &kp I                &kp O    &kp P     &kp RIGHT_GUI
+&kp LEFT_ALT  &kp A  &kp S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H          &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &kp L    &kp SEMI  &none
+&none         &kp Z  &kp X  &kp C               &kp V             &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N          &kp M              &kp COMMA            &kp DOT  &kp FSLH  &none
+                            &lt 2 RS(TAB)       &lt 1 SPACE       &lt 5 TAB                                                                &kp BACKSPACE  &lt 3 ENTER        &lt 4 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -222,9 +222,9 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                      &trans          &none      &kp HOME   &kp UP     &kp END    &none  &none
-&none  &none             &kp TAB           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE               &trans  &trans  &trans  &none      &kp LEFT   &kp DOWN   &kp RIGHT  &none  &none
-&none  &none             &none             &none             &none             &kp LEFT_ALT  &trans            &trans          &none      &none      &none      &none      &none  &none
+&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                      &trans          &none      &kp HOME   &kp UP     &kp END    &kp PAGE_UP    &none
+&none  &none             &kp TAB           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE               &trans  &trans  &trans  &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN  &none
+&none  &none             &none             &none             &none             &kp LEFT_ALT  &trans            &trans          &none      &none      &none      &none      &none          &none
                                            &trans            &trans            &trans                                          &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
 
