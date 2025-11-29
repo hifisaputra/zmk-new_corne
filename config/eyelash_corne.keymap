@@ -202,10 +202,10 @@
         coding_macros {
             display-name = "CODE";
             bindings = <
-&none  &macro_arrow_fn  &macro_php_ptr    &macro_php_scope  &macro_dollar_brace  &macro_backtickpair                    &trans          &macro_brack          &macro_paren  &macro_brace  &macro_php_tags_open  &macro_php_tags_close  &none
-&none  &macro_log       &macro_double_eq  &td_eq            &none                &macro_return                  &trans  &trans  &trans  &macro_php_get_field  &none         &none         &none                 &macro_echo            &none
-&none  &none            &none             &none             &none                &none                &trans            &trans          &none                 &none         &none         &none                 &none                  &none
-                                          &trans            &trans               &trans                                                 &trans                &none         &trans
+&none  &macro_arrow_fn  &macro_php_ptr    &macro_php_scope  &macro_dollar_brace  &macro_backtickpair                    &trans          &none   &mkp LCLK          &mmv MOVE_Y(-600)  &mkp RCLK         &none  &none
+&none  &macro_log       &macro_double_eq  &td_eq            &none                &macro_return                  &trans  &trans  &trans  &none   &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &none  &none
+&none  &none            &none             &none             &none                &none                &trans            &trans          &none   &none              &none              &none             &none  &none
+                                          &trans            &trans               &trans                                                 &trans  &none              &trans
             >;
         };
 
@@ -222,10 +222,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                      &trans          &none      &kp HOME   &kp UP     &kp END    &kp PAGE_UP    &none
-&none  &none             &kp TAB           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE               &trans  &trans  &trans  &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN  &none
-&none  &none             &none             &none             &none             &kp LEFT_ALT  &trans            &trans          &none      &none      &none      &none      &none          &none
-                                           &trans            &trans            &trans                                          &mkp LCLK  &mkp MCLK  &mkp RCLK
+&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                      &trans          &none   &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
+&none  &none             &kp TAB           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE               &trans  &trans  &trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
+&none  &none             &none             &none             &none             &kp LEFT_ALT  &trans            &trans          &none   &none     &none     &none      &none          &none
+                                           &trans            &trans            &trans                                          &trans  &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
