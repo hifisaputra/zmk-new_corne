@@ -42,7 +42,56 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
+  - {t: BASE MAC, h: toggle}
+  - {t: 'Sft+$$mdi:keyboard-tab$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-tab$$', h: NAV}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: CODE}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
+  BASE MAC:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - RIGHT GUI
+  - $$mdi:apple-keyboard-option$$
+  - A
+  - S
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB1'
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - L
+  - {t: ;, s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: TYPE, h: toggle}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: BASE, h: toggle}
   - {t: 'Sft+$$mdi:keyboard-tab$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-tab$$', h: NAV}
