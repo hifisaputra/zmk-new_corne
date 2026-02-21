@@ -178,10 +178,10 @@
         base_mac_layer {
             display-name = "BASE MAC";
             bindings = <
-&kp ESCAPE    &kp Q  &kp W  &kp E               &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y          &kp U              &kp I                &kp O    &kp P     &kp RIGHT_GUI
-&kp LEFT_ALT  &kp A  &kp S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H          &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &kp L    &kp SEMI  &none
-&to 7         &kp Z  &kp X  &kp C               &kp V             &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N          &kp M              &kp COMMA            &kp DOT  &kp FSLH  &to 0
-                            &lt 3 RS(TAB)       &lt 2 SPACE       &lt 6 TAB                                                                &kp BACKSPACE  &lt 4 ENTER        &lt 5 DELETE
+&kp ESCAPE    &kp Q  &kp W  &kp E           &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y          &kp U              &kp I                &kp O    &kp P     &kp RIGHT_GUI
+&kp LEFT_ALT  &kp A  &kp S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H          &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &kp L    &kp SEMI  &none
+&to 7         &kp Z  &kp X  &kp C           &kp V             &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N          &kp M              &kp COMMA            &kp DOT  &kp FSLH  &to 0
+                            &lt 3 RS(TAB)   &lt 2 SPACE       &lt 6 TAB                                                                &kp BACKSPACE  &lt 4 ENTER        &lt 5 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
