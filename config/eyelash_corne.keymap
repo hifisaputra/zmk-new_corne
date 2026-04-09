@@ -234,10 +234,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                      &trans          &none   &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
-&none  &none             &kp TAB           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE               &trans  &trans  &trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
-&none  &none             &none             &none             &none             &kp LEFT_ALT  &trans            &trans          &none   &none     &none     &none      &none          &none
-                                           &trans            &trans            &trans                                          &trans  &trans    &trans
+&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                          &trans          &none   &kp LS(LC(LEFT_BRACE))  &kp UP    &kp LS(LC(RIGHT_BRACE))  &kp LC(PAGE_UP)    &none
+&none  &none             &kp TAB           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE                   &trans  &trans  &trans  &none   &kp LEFT                &kp DOWN  &kp RIGHT                &kp LC(PAGE_DOWN)  &none
+&none  &none             &none             &none             &none             &kp LC(LEFT_ALT)  &trans            &trans          &none   &none                   &none     &none                    &none              &none
+                                           &trans            &trans            &trans                                              &trans  &trans                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
