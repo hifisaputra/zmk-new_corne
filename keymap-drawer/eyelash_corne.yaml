@@ -302,7 +302,7 @@ layers:
   - Ctl+4
   - {t: Ctl+5, s: Ctl+%}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RIGHT GUI
   - Sft+Ctl+{
   - $$mdi:arrow-up-bold$$
   - Sft+Ctl+}
