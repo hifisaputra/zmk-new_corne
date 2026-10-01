@@ -161,7 +161,7 @@ layers:
   - PgDn
   - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - '6'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
